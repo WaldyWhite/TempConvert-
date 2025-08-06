@@ -16,10 +16,9 @@ const radioCheck = () => {
 
 const getNumber = () => {
     const inputNumber = document.getElementById("txt1").value;
-    if (isNaN(inputNumber) && inputNumber != undefined) {
+    if (isNaN(inputNumber)) {
         alert("Invalid input. Please enter numbers only.");
-        return;
-    } else{
+    } else if(inputNumber){
         return Number(inputNumber);
     }
 
